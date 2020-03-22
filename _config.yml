@@ -1,1 +1,19 @@
-theme: jekyll-theme-slate
+﻿
+# Site settings
+name: 舟寒丶
+location: 武汉/丽水
+company: 华中科技大学HUST
+position: 管理学院本科生github: https://github.com/
+facebook: https://www.facebook.com/
+phone: 1580424XXXX
+email: zh20010728@126.comn.com
+
+baseurl: "/resume.io"
+
+permalink: /:year/:month/:day/:title/
+
+exclude: ['README.md']
+
+# Build settings
+markdown: kramdown
+
