@@ -1,0 +1,483 @@
+/* 主页index.html的样式表 */
+
+/* 顶部导航条的容器 */
+.topbar-wrapper{
+    /* 设置宽度全屏 */
+    width: 100%;
+    /* 设置高度和行高 */
+    height: 45px;
+    line-height: 45px;
+    /* 设置背景颜色 */
+    background-color: #333;
+    position: fixed;
+    z-index: 9999;
+}
+.topbar{
+    width: 1100px;
+    margin: 0 auto;
+}
+/* 设置超链接的颜色 */
+.topbar a{
+    font-size: 16px;
+    color: #b0b0b0;
+    display: block;
+}
+
+/* 设置超链接移入的效果 */
+.topbar a:hover{
+    color: #fff;
+}
+
+/* 设置中间分割线 */
+.topbar .line{
+    font-size: 17px;
+    color: #424242;
+    margin: 0 13px;
+}
+
+/* 设置左侧导航栏 */
+.service, .topbar li{
+    float: left;
+}
+
+
+/* 设置右侧导航栏 */
+.social-web{
+    float: right;
+}
+
+.social-web i{
+    margin-right: 2px;
+}
+
+.app{
+    position: relative;
+}
+/* 设置app下的小三角 */
+/* .app-wrapper:hover > .app::after{ */
+.app::after{
+    content: '';
+    display: none;
+    /* 设置绝对定位 */
+    position: absolute;
+    width: 0;
+    height: 0;
+    /* 设置四个方向的边框 */
+    border: 8px solid transparent;
+    /* 去除上边框 */
+    border-top: none;
+    /* 单独设置下边框的颜色 */
+    border-bottom-color: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+}
+
+.app:hover .qrcode,
+.app:hover::after{
+    display: block;
+    height: 393px;
+}
+
+/* .app-wrapper:hover>.app .qrcode{
+    display: block;
+
+} */
+/* 设置下载app的下拉 */
+.app .qrcode{
+    /* display: none; */
+    position: absolute;
+    left: -95px;
+    width: 300px;
+    /* height: 148px; */
+    height: 0;
+    overflow: hidden;
+    /* margin-left: -62px; */
+    line-height: 1;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+
+    /* transition: 用于为样式设置过渡效果 */
+    transition: height 0.3s;
+
+    z-index: 9999;
+}
+
+/* 设置二维码图片 */
+.app .qrcode img{
+    width: 280px;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+/* ###################################### */
+
+/* 设置回到顶部的元素 */
+.back-top{
+    width: 50px;
+    height: 50px;
+    /* 开启固定定位 */
+    position: fixed;
+    bottom: 60px;
+    right: 50%; /*将right值设置为视口宽度的50%*/
+    margin-right: -639px;
+    font-size: 50px;
+}
+
+/* ###################################### */
+
+.float{
+    width: 250px;
+    height: 400px;
+    background-color: rgb(184, 236, 240);
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .3) ; 
+}
+
+.float .img-wrapper{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+    left: 35px;
+}
+
+.float .img-wrapper img{
+    width: 180px;
+    height: 180px;
+}
+
+.float .name{
+    height: 30px;
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 85px;
+    font-family: 华文行楷;
+}
+
+.float p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 17px;
+    position: relative;
+    top: 65px;
+    left: 40px;
+    color: rgba(118, 134, 150, 0.87);
+}
+
+.float .over{
+    width: 250px;
+    height: 90px;
+    background-color: white;
+    margin: 80px auto;
+}
+
+/* ###################################### */
+
+/* 设置基本框 */
+.basic-wrapper{
+    position: absolute;
+    width: 800px;
+    height: 2700px;
+    right: 200px;
+    top: 100px;
+    padding: 30px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .3) ; 
+}
+
+.info-wrapper{
+    /* 设置上边框 */
+    border-top: 1px solid #ddd;
+    padding: 50px;
+}
+
+.basic-wrapper :first-child{
+    border-top: none;
+}
+
+.info-wrapper h2{
+    font-size: 30px;
+    color: gray;
+}
+
+.basic-info{
+    padding: 10px;
+    position: relative;
+    width: 700px;
+    /* background-color: rgb(209, 135, 135)(146, 93, 93); */
+}
+
+.basic-info li{
+    margin: 5px auto;
+    display: block;
+    position: relative;
+    /* background-color: rgb(158, 158, 229); */
+    height: 42px;
+}
+
+.basic-info .que{
+    display: inline-block;
+    line-height: 42px;
+    color: black;
+    padding: 0 30px;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    width: 200px;
+}
+
+.basic-info .ans{
+    font-size: 15px;
+    /* float: left; */
+    line-height: 42px;
+    position: relative;
+    left: 50px;
+    display: inline-block;
+}
+/* ############################## */
+.inner-wrapper{
+    /* padding: 10px; */
+    position: relative;
+    width: 700px;
+    display: block;
+    /* background-color: rgb(223, 77, 77); */
+    margin-top: 20px;
+}
+
+.inner-wrapper .skill{
+    width: 320px;
+    height: 100px;
+    display: inline-block;
+    /* background-color: rgb(157, 157, 212); */
+    margin: 5px 5px;
+    position: relative;
+    left: 20px;
+    /* top: 20px; */
+}
+
+.inner-wrapper .skill .progress-title{
+    font-size: 20px;
+}
+
+.inner-wrapper .skill .progress-bar{
+    position: relative;
+}
+
+.inner-wrapper .skill .progress-bar {
+    position: relative;
+    float: left;
+    top: 10px;
+}
+
+.inner-wrapper .skill .progress-bar .bulletfill{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 2px rgb(214, 197, 197) solid;
+    border-radius: 50%;
+    background-color: rgb(76, 214, 111);
+    margin-left: 6px;
+}
+
+.inner-wrapper .skill .progress-bar .bullet{
+    display: block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    border: 2px  rgb(214, 197, 197) solid;
+    border-radius: 50%;
+    background-color: rgb(76, 214, 111,.1);
+    margin-left: 6px;
+}
+/* ############################## */
+.edu-wrapper{
+    /* padding: 10px; */
+    position: relative;
+    width: 700px;
+    display: block;
+    /* background-color: rgb(223, 77, 77); */
+    margin-top: 20px;
+}
+
+.edu-wrapper .pic-wrapper{
+    position: relative;
+    left: 10px;
+    top: 0px;
+}
+
+.edu-wrapper .pic-wrapper .school{
+    position: relative;
+    left: 180px;
+    top: -110px;
+    font-size: 25px;
+}
+
+.edu-wrapper .pic-wrapper .school a{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+}
+
+.edu-wrapper .pic-wrapper .school p{
+    font-size: 17px;
+    position: relative;
+    top: 40px;
+}
+
+
+/* ############################## */
+.timezone{
+    width:6px;
+    height: 350px;
+    background-color: rgb(184, 236, 240);
+    margin: 20px auto;
+    margin-top:50px;
+    border-radius: 3px;
+    position: relative;
+}
+.timezone:after{
+    content: '仍在努力！！！';
+    font-size: 18px;
+    width: 200px;
+    color:rgb(0, 0, 0);
+    position: absolute;
+    margin-left: -35px;
+    bottom: -40px;
+}
+.timezone .timeRight,.timezone .timeLeft, .timezone .timeRight2{
+    position: absolute;
+    margin-left: -10px;
+    margin-top:-10px;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    border:4px solid rgba(255,255,255,0.5);
+    background: rgb(184, 236, 240);;
+}
+
+.timezone .timeRight h3,.timezone .timeLeft h3, .timezone .timeRight2 h3{
+    position: absolute;
+    margin-left: -150px;
+    margin-top: -8px;
+    color:black;
+    font-size: 20px;
+    cursor:pointer;
+}
+.timezone .timeLeft h3{
+    margin-left: 80px;
+    width: 100px;
+}
+.timezone .timeRight2{
+    margin-top: 190px;
+}
+
+.timezone .timeRight:hover,.timezone .timeLeft:hover, .timezone .timeRight2:hover{
+    border:4px solid  rgb(184, 236, 240);;
+    background: lemonchiffon;
+    box-shadow: 0 0 2px 2px rgba(255,255,255,0.4);
+}
+.timezone .timeRight div,.timezone .timeLeft div, .timezone .timeRight2 div{
+    position: absolute;
+    top:50%;
+    margin-top: -25px;
+    left:50px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(184, 236, 240);
+    border:3px solid #eee;
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+    cursor:pointer;
+}
+.timezone .timeLeft div{
+    left:-337px;
+}
+.timezone .timeRight div:hover,.timezone .timeLeft div:hover, .timezone .timeRight2 div:hover{
+    height: 170px;
+}
+.timezone .timeRight div p,.timezone .timeLeft div p, .timezone .timeRight2 div p{
+    font-weight: bold;
+    text-align: center;
+}
+.timezone .timeRight:before,.timezone .timeLeft:before, .timezone .timeRight2:before{
+    content: '';
+    position: absolute;
+    top:0px;
+    left: 32px;
+    width: 0px;
+    height: 0px;
+    border:10px solid transparent;
+    border-right:10px solid #eee;
+    z-index:-1;
+}
+.timezone .timeLeft:before{
+    left:-33px;
+    border:10px solid transparent;
+    border-left:10px solid #eee;
+}
+.timezone .timeRight div ul,.timezone .timeLeft div ul, .timezone .timeRight2 div ul{
+    list-style: none;
+    width:300px;
+    padding:5px 0 0;
+    border-top:2px solid #eee;
+    color:black;
+    text-align: center;
+}
+.timezone .timeRight div li,.timezone .timeLeft div li, .timezone .timeRight2 div li{
+    display: block;
+    height: 25px;
+    line-height: 25px;
+    font-weight: none;
+}
+
+.timezone .timeRight div li strong,.timezone .timeLeft div li strong, .timezone .timeRight2 div li strong{
+    font-weight: bold;
+}
+
+
+/* ########## */
+.gf-wrapper{
+    width: 333px;
+    height: 496px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .3);
+}
+
+.gr-wrapper img{
+    width: 333px;
+    height: 500;
+}
+
+.words-wrapper{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 170px;
+    font-family: 华文行楷;
+}
+
+.words-wrapper span{
+    float: right;
+    padding-right: 30px;
+    font-size: 15px;
+}
+
+/* ################################# */
+
+.end{
+    width: 100%;
+    height: 2950px;
+}
+
+footer{
+    text-align: center;
+}

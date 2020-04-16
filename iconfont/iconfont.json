@@ -1,0 +1,16 @@
+{
+  "id": "1747622",
+  "name": "1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "3506983",
+      "name": "csdn",
+      "font_class": "csdn",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    }
+  ]
+}

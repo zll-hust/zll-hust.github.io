@@ -1,75 +1,281 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="个人简介" content="width=device-width, initial-scale=1.0">
+    <title>personal introduction for zll</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./fa/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index v2.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
 
-<div id="ace-content" class="ace-container-shift">
-    <div class="ace-container">
-        <div id="ace-nav-wrap" class="hidden-sm hidden-xs">
-            <div class="ace-nav-cont">
-                <div id="ace-nav-scroll">
-                    <nav id="ace-nav" class="ace-nav">
-                        <ul class="clear-list">
-                            <li>
-                              <a href="index.html" data-tooltip="Home"><img class="avatar avatar-42" src="{{ '/styles/img/show-star.png' | prepend: site.baseurl }}" alt=""></a>
-                            </li>
-                            <li>
-                              <a href="#basic_info" data-tooltip="基本信息"><span class="ace-icon ace-icon-home"></span></a>
-                            </li>
-                            <li>
-                              <a href="#profetional" data-tooltip="职业技能"><span class="ace-icon ace-icon-experience"></span></a>
-                            </li>
+<body>
+    <!-- 顶部导航条 -->
+    <!-- 顶部导航条外部容器 -->
+    <div class="topbar-wrapper">
+        <!-- 创建内部容器 -->
+        <div class="topbar clearfix">
+            <!-- 左侧的导航 -->
+            <ul class="service">
+                <li><a href="#p1">基本信息</a></li>
+                <li class="line">|</li>
+                <li><a href="#p2">职业技能</a></li>
+                <li class="line">|</li>
+                <li><a href="#p3">教育经历</a></li>
+                <li class="line">|</li>
+                <li><a href="#p4">比赛经历</a></li>
+                <li class="line">|</li>
+                <li><a href="#p5">特别感谢</a></li>
+            </ul>
 
-                            <li>
-                              <a href="#education" data-tooltip="教育经历"><span class="ace-icon ace-icon-portfolio"></span></a>
-                            </li>
-                            
-                            <li>
-                              <a href="#experience" data-tooltip="工作经历"><span class="ace-icon ace-icon-references"></span></a>
-                            </li>
-                            <li>
-                              <a href="#certification" data-tooltip="获得证书"><span class="ace-icon ace-icon-blog"></span></a>
-                            </li>
-                            <li>
-                              <a href="#personal_project" data-tooltip="个人作品"><span class="ace-icon ace-icon-snowflake-o"></span></a>
-                            </li>
-                        </ul>
-                    </nav>
+            <!-- 社交账户栏 -->
+            <ul class="social-web">
+                <li><a href="https://github.com/zll-hust" title="github">
+                        <i class="fa fa-github"></i>
+                        github
+                    </a></li>
+                <li class="line">|</li>
+                <li><a href="https://blog.csdn.net/zll_hust" title="CSDN">
+                        <i class="iconfont">&#xe600;</i>
+                        CSDN
+                    </a></li>
+                <li class="line">|</li>
+                <li class="app-wrapper">
+                    <a class="app" href="javascript:;" title="扫码关注我的微信公众号！">
+                        <i class="fa fa-weixin" aria-hidden="true"></i>
+                        微信公众号
+                        <!-- 添加一个弹出层 -->
+                        <div class="qrcode">
+                            <img src="./styles/img/公众号封面.jpg">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <!-- 回到顶部 -->
+    <div class="back-top">
+        <a href="#" title="回到顶部">
+            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+        </a>
+    </div>
+
+    <!-- 左侧浮动窗 -->
+    <div class="float">
+        <div class="img-wrapper">
+            <img src="./styles/img/personal.jpg" alt="">
+        </div>
+        <div class="name">
+            舟 寒 丶
+        </div>
+        <p>
+            华中科技大学 | 本科生
+        </p>
+        <div class="over"></div>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="basic-wrapper w">
+        <!-- 基本信息 -->
+        <div class="info-wrapper" id="p1">
+            <h2 id="p1" class="new-title">基本信息</h2>
+            <ul class="new-list basic-info">
+                <li>
+                    <span class="que">性别</span>
+                    <span class="ans">男</span>
+                </li>
+                <li>
+                    <span class="que">出生日期</span>
+                    <span class="ans">2001.7.28</span>
+                </li>
+                <li>
+                    <span class="que">手机</span>
+                    <span class="ans">15215760020</span>
+                </li>
+                <li>
+                    <span class="que">e-mail</span>
+                    <span class="ans"><a href="mailto:zh20010728@126.com">zh20010728@126.com</a></span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 职业技能 -->
+        <div class="info-wrapper" id="p2">
+            <h2 class=>职业技能</h2>
+            <div class="inner-wrapper">
+                <div class="skill">
+                    <strong class="progress-title">Java</strong>
+                    <span class="progress-bar">
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </span>
                 </div>
 
-                <div id="ace-nav-tools" class="hidden">
-                    <span class="ace-icon ace-icon-dots-three-horizontal"></span>
+                <div  class="skill">
+                    <strong class="progress-title">Python</strong>
+                    <span class="progress-bar">
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </span>
+                </div>
 
-                    <button id="ace-nav-arrow" class="clear-btn">
-                        <span class="ace-icon ace-icon-chevron-thin-down"></span>
-                    </button>
+                <div class="skill">
+                    <strong class="progress-title">C++</strong>
+                    <span class="progress-bar">
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </span>
+                </div>
+
+                <div class="skill">
+                    <strong class="progress-title">HTML & CSS</strong>
+                    <span class="progress-bar">
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bulletfill"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                        <span class="bullet"></span>
+                    </span>
                 </div>
             </div>
 
-            <!-- <div class="ace-nav-btm"></div> -->
-        </div><!-- .ace-nav-wrap -->
+        </div>
 
-        <div class="ace-paper-stock">
-            <main class="ace-paper clearfix">
-                <div class="ace-paper-cont clear-mrg">
-                    <!-- START: PAGE CONTENT -->
-                    <div class="padd-box clear-mrg">
+        <!-- 教育经历 -->
+        <div class="info-wrapper" id="p3">
+            <h2 id="p2" class="new-title">教育经历</h2>
+            <div class="edu-wrapper">
+                <div class="pic-wrapper">
+                    <img src="./styles/img/school.jpg"  height="120" alt="华中科技大学校徽" >
+                    <div class="school">
+                        <a href="http://www.hust.edu.cn/"  target="_blank"> <strong>华中科技大学</strong></a>
+                        <span>2019 - 2020 | 管理学创新实验班</span>
+                        <p>
+                        加入华中科技大学运筹优化团队 <strong>【数据魔术师】</strong> 学习运筹优化算法。
+                        <br><br>
+                        在公众号 <strong>【数据魔术师】、【程序猿声】</strong> 内发布多篇优化算法相关推文。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    {% include resumer_01-basic.html %}
+        <!-- 比赛经历 -->
+        <div class="info-wrapper" id="p4">
+            <h2>比赛经历</h2>
+            <div class="timezone">
+                <div class="timeRight">
+                    <h3>Sept <strong>2018</strong></h3>
+                    <div>
+                        <p>全国高中生数学联赛 | 丽水中学</p>
+                        <ul>
+                            <p>刷题做试卷</p>
+                            <br>
+                            <br>
+                            <li>个人参与</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeLeft" style="top: 100px;">
+                    <h3>Feb. <strong>2020</strong></h3>
+                    <div>
+                        <p>美国大学生数学建模大赛 | 华中科技大学</p>
+                        <ul>
+                            <p>算法设计，代码编写，数据分析，文案</p>
+                            <br>
+                            <li>与管理学院17级物流专业学长组队</li>
+                            <li>负责算法开发和对应代码编写</li>
+                            <li>参与部分数据分析及文案工作</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeRight2">
+                    <h3>Jan <strong>2020</strong> - now</h3>
+                    <div>
+                        <p>中国大学生服务外包大赛 | 华中科技大学</p>
+                        <ul>
+                            <p>算法设计，代码编写，数据分析</p>
+                            <br>
+                            <li>参与团队 <strong>“关山口的俊女靓男”</strong></li>
+                            <li>负责算法开发和对应代码编写</li>
+                            <li>负责数据分析</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- kawai npy -->
+        <div class="info-wrapper" id="p5">
+            <h2>特别感谢</h2>
+            <div class="gf-wrapper">
+                <img src="./styles/img/美丽的李佳妮同学.jpg" alt="" height="500px">
+            </div>
+            <div class="words-wrapper">
+                <p>
+                    和Genious_Lee在一起大概一个月了。
+                    <br>
+                    满打满算认识也不过半年多，见面的次数屈指可数。
+                    <br>
+                    但是不妨碍我深深的喜欢上这个活泼可爱的女孩。
+                    <br>
+                    <br>
+                    虽然一路走来遇到了许多困难，
+                    <br>
+                    还好有你在，能坚持走下来。
+                    <br>
+                    <br>
+                    希望能一直和你走下去。
+                    <br>
+                    <span class="date">2020.4.16</span> 
+                </p>
+            </div>
+        </div>
+    </div>
 
-                    {% include resumer_02-profetional.html %}
+    <div class="end"></div>
+</body>
 
-                    {% include resumer_03-education.html %}
+<footer class="w">
+    <div>
+        <p>Copyright &copy; 2020.Company name All rights reserved.<a href="https://github.com/zll-hust"  target="_blank">zll-hust</a></p>
+    </div>
+</footer>
 
-                    {% include resumer_04-experience.html %}
-
-                    {% include resumer_05-certification.html %}
-
-                    {% include resumer_06-personal_project.html %}
-                        
-                    </div><!-- .padd-box -->
-                <!-- END: PAGE CONTENT -->
-                </div><!-- .ace-paper-cont -->
-            </main><!-- .ace-paper -->
-        </div><!-- .ace-paper-stock -->
-    </div><!-- .ace-container -->
-</div><!-- #ace-content -->
+</html>
