@@ -1,23 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="个人简介" content="width=device-width, initial-scale=1.0">
-    <title>personal introduction for zll</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <title>zll's homepage</title>
+    <link rel="stylesheet" href="./styles/css/reset.css">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./fa/font-awesome-4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/index v2.css">
+    <link rel="stylesheet" href="./styles/css/base.css">
+    <link rel="stylesheet" href="./styles/css/index v2.css">
     <link rel="icon" href="./favicon.ico">
+
+    <script type="text/javascript">
+        window.onload = function () {
+            // 设置顶部导航栏position:fixed后能随网页左右拖动
+            window.onscroll = function () {
+                var sl = -Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);
+                document.getElementById('top').style.left = sl + 'px';
+
+            };
+
+            // 设置鼠标上的红圈
+            var box1 = document.getElementById("box1");
+            document.onmousemove = function (event) {
+                var st = document.body.scrollTop || document.documentElement.scrollTop;
+                var sl = document.body.scrollLeft || document.documentElement.scrollLeft;
+
+                var left = event.clientX;
+                var top = event.clientY;
+
+                var width = getComputedStyle(box1, null).width;
+                var height = getComputedStyle(box1, null).height;
+
+                box1.style.left = left + sl - parseInt(width) / 2 + "px";
+                box1.style.top = top + st - parseInt(height) / 2 + "px";
+            };
+
+            document.onmousedown = function () {
+                box1.style.backgroundColor = "rgba(255, 32, 32, 0.8)";
+            }
+
+            document.onmouseup = function () {
+                box1.style.backgroundColor = "rgba(255, 32, 32, 0.5)";
+            }
+
+            // ########################################################
+
+            var imgList = document.getElementById("imgList");
+            var imgArr = imgList.getElementsByTagName("img");
+            imgList.style.width = 520 * imgArr.length + "px";
+
+            /*设置导航按钮居中*/
+            var navDiv = document.getElementById("navDiv");
+            var outer = document.getElementById("gf");
+            navDiv.style.left = (outer.offsetWidth - navDiv.offsetWidth) / 2 + "px";
+
+            //默认显示图片的索引
+            var index = 0;
+            var allA = outer.getElementsByTagName("a");
+            //设置默认选中的效果
+            allA[index].style.backgroundColor = "black";
+            //为所有的超链接都绑定单击响应函数
+            for (var i = 0; i < allA.length; i++) {
+                allA[i].num = i;
+                allA[i].onclick = function () {
+                    clearInterval(timer);
+                    index = this.num;
+                    setA();
+                    move(imgList, "left", -353 * index, 20, function () {
+                        autoChange();
+                    });
+                };
+            }
+
+            //开启自动切换图片
+            autoChange();
+
+            //创建一个方法用来设置选中的a
+            function setA() {
+                if (index >= imgArr.length - 1) {
+                    index = 0;
+                    imgList.style.left = 0;
+                }
+                for (var i = 0; i < allA.length; i++) {
+                    allA[i].style.backgroundColor = "";
+                }
+                allA[index].style.backgroundColor = "black";
+            };
+
+            var timer;
+            //创建一个函数，用来开启自动切换图片
+            function autoChange() {
+                timer = setInterval(function () {
+                    index++;
+                    index %= imgArr.length;
+                    move(imgList, "left", -353 * index, 20, function () {
+                        setA();
+                    });
+                }, 3000);
+            }
+
+            /*
+             * 参数：
+             * 	obj:要执行动画的对象
+             * 	attr:要执行动画的样式，比如：left top width height
+             * 	target:执行动画的目标位置
+             * 	speed:移动的速度(正数向右移动，负数向左移动)
+             *  callback:回调函数，这个函数将会在动画执行完毕以后执行
+             */
+            function move(obj, attr, target, speed, callback) {
+                //关闭上一个定时器
+                clearInterval(obj.timer);
+
+                //获取元素目前的位置
+                var current = parseInt(getComputedStyle(obj)[attr]);
+                //判断速度的正负值
+                if (current > target) {
+                    //此时速度应为负值
+                    speed = -speed;
+                }
+                //开启一个定时器，用来执行动画效果
+                //向执行动画的对象中添加一个timer属性，用来保存它自己的定时器的标识
+                obj.timer = setInterval(function () {
+                    //获取box1的原来的left值
+                    var oldValue = parseInt(getComputedStyle(obj)[attr]);
+                    //在旧值的基础上增加
+                    var newValue = oldValue + speed;
+                    //判断newValue是否大于800
+                    //向左移动时，需要判断newValue是否小于target
+                    //向右移动时，需要判断newValue是否大于target
+                    if ((speed < 0 && newValue < target) || (speed > 0 && newValue > target)) {
+                        newValue = target;
+                    }
+                    obj.style[attr] = newValue + "px";
+                    //当元素移动到0px时，使其停止执行动画
+                    if (newValue == target) {
+                        //达到目标，关闭定时器
+                        clearInterval(obj.timer);
+                        //动画执行完毕，调用回调函数
+                        callback && callback();
+                    }
+                }, 30);
+            }
+        };
+    </script>
 </head>
 
 <body>
+
+    <!-- 鼠标移动 -->
+    <div id="box1"></div>
+
     <!-- 顶部导航条 -->
     <!-- 顶部导航条外部容器 -->
-    <div class="topbar-wrapper">
+    <div class="topbar-wrapper" id="top">
         <!-- 创建内部容器 -->
-        <div class="topbar clearfix">
+        <div class="topbar clearfix w">
             <!-- 左侧的导航 -->
             <ul class="service">
                 <li><a href="#p1">基本信息</a></li>
@@ -58,223 +197,246 @@
 
         </div>
     </div>
+    <div class="w">
+        <!-- 回到顶部 -->
+        <div class="back-top">
+            <a href="#" title="回到顶部">
+                <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+            </a>
+        </div>
 
-    <!-- 回到顶部 -->
-    <div class="back-top">
-        <a href="#" title="回到顶部">
-            <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
-        </a>
+        <!-- 左侧浮动窗 -->
+        <div class="float">
+            <div class="img-wrapper">
+                <img src="./styles/img/personal.jpg" alt="">
+            </div>
+            <div class="name">
+                舟 寒 丶
+            </div>
+            <p>
+                华中科技大学 | 本科生
+            </p>
+            <div class="over"></div>
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="basic-wrapper w">
+            <!-- 基本信息 -->
+            <div class="info-wrapper" id="p1">
+                <h2 id="p1" class="new-title">基本信息</h2>
+                <ul class="new-list basic-info">
+                    <li>
+                        <span class="que">性别</span>
+                        <span class="ans">男</span>
+                    </li>
+                    <li>
+                        <span class="que">出生日期</span>
+                        <span class="ans">2001.7.28</span>
+                    </li>
+                    <li>
+                        <span class="que">手机</span>
+                        <span class="ans">15215760020</span>
+                    </li>
+                    <li>
+                        <span class="que">e-mail</span>
+                        <span class="ans"><a href="mailto:zh20010728@126.com">zh20010728@126.com</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 职业技能 -->
+            <div class="info-wrapper" id="p2">
+                <h2 class=>职业技能</h2>
+                <div class="inner-wrapper">
+                    <div class="skill">
+                        <strong class="progress-title">Java</strong>
+                        <span class="progress-bar">
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                        </span>
+                    </div>
+
+                    <div class="skill">
+                        <strong class="progress-title">Python</strong>
+                        <span class="progress-bar">
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                        </span>
+                    </div>
+
+                    <div class="skill">
+                        <strong class="progress-title">C++</strong>
+                        <span class="progress-bar">
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                        </span>
+                    </div>
+
+                    <div class="skill">
+                        <strong class="progress-title">HTML & CSS & JavaScript</strong>
+                        <span class="progress-bar">
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bulletfill"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                            <span class="bullet"></span>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 教育经历 -->
+            <div class="info-wrapper" id="p3">
+                <h2 id="p2" class="new-title">教育经历</h2>
+                <div class="edu-wrapper">
+                    <div class="pic-wrapper">
+                        <img src="./styles/img/school.jpg" height="120" alt="华中科技大学校徽">
+                        <div class="school">
+                            <a href="http://www.hust.edu.cn/" target="_blank"> <strong>华中科技大学</strong></a>
+                            <span>2019 - 2020 | 管理学创新实验班</span>
+                            <p>
+                                加入华中科技大学运筹优化团队 <strong>【数据魔术师】</strong> 学习运筹优化算法。
+                                <br><br>
+                                在公众号 <strong>【数据魔术师】、【程序猿声】</strong> 内发布多篇优化算法相关推文。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 比赛经历 -->
+            <div class="info-wrapper" id="p4">
+                <h2>比赛经历</h2>
+                <div class="timezone">
+                    <div class="timeRight">
+                        <h3>Sept <strong>2018</strong></h3>
+                        <div>
+                            <p>全国高中生数学联赛 | 丽水中学</p>
+                            <ul>
+                                <p>刷题做试卷</p>
+                                <br>
+                                <br>
+                                <li>个人参与</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeLeft" style="top: 100px;">
+                        <h3>Feb. <strong>2020</strong></h3>
+                        <div>
+                            <p>美国大学生数学建模大赛 | 华中科技大学</p>
+                            <ul>
+                                <p>算法设计，代码编写，数据分析，文案</p>
+                                <br>
+                                <li>H奖</li>
+                                <li>负责算法开发和对应代码编写</li>
+                                <li>参与部分数据分析及文案工作</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeRight2">
+                        <h3>Jan <strong>2020</strong> - now</h3>
+                        <div>
+                            <p>中国大学生服务外包大赛 | 华中科技大学</p>
+                            <ul>
+                                <p>算法设计，代码编写，数据分析</p>
+                                <br>
+                                <li>参与团队 <strong>“关山口的俊女靓男”</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kawai npy -->
+            <div class="info-wrapper" id="p5">
+                <h2>特别感谢</h2>
+                <div class="gf-wrapper" id="gf">
+                    <!-- 存放我的女朋友的图片 -->
+                    <ul id="imgList">
+                        <li><img src="./styles/img/ljn/1.jpg" /></li>
+                        <li><img src="./styles/img/ljn/2.jpg" /></li>
+                        <li><img src="./styles/img/ljn/3.jpg" /></li>
+                        <li><img src="./styles/img/ljn/4.jpg" /></li>
+                        <li><img src="./styles/img/ljn/5.jpg" /></li>
+                        <li><img src="./styles/img/ljn/6.jpg" /></li>
+                        <li><img src="./styles/img/ljn/7.jpg" /></li>
+                        <li><img src="./styles/img/ljn/8.jpg" /></li>
+                        <li><img src="./styles/img/ljn/9.jpg" /></li>
+                        <li><img src="./styles/img/ljn/1.jpg" /></li>
+                    </ul>
+                    <!--创建导航按钮-->
+                    <div id="navDiv">
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                        <a href="javascript:;"></a>
+                    </div>
+                </div>
+                <div class="words-wrapper">
+                    <p>
+                        和Genious_Lee在一起大概两个月了。
+                        <br>
+                        虽然见面的次数屈指可数，连五一也没能见面。
+                        <br>
+                        但是不妨碍我深深的喜欢上这个活泼可爱的女孩。
+                        <br>
+                        <br>
+                        虽然经常发生矛盾，三天一小吵五天一大吵，
+                        <br>
+                        还好有你在，能坚持走下来。
+                        <br>
+                        <br>
+                        希望能一直和你走下去。
+                        <br>
+                        <span class="date">2020.5.14</span>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <!-- 左侧浮动窗 -->
-    <div class="float">
-        <div class="img-wrapper">
-            <img src="./styles/img/personal.jpg" alt="">
-        </div>
-        <div class="name">
-            舟 寒 丶
-        </div>
-        <p>
-            华中科技大学 | 本科生
-        </p>
-        <div class="over"></div>
-    </div>
-
-    <!-- 主体内容 -->
-    <div class="basic-wrapper w">
-        <!-- 基本信息 -->
-        <div class="info-wrapper" id="p1">
-            <h2 id="p1" class="new-title">基本信息</h2>
-            <ul class="new-list basic-info">
-                <li>
-                    <span class="que">性别</span>
-                    <span class="ans">男</span>
-                </li>
-                <li>
-                    <span class="que">出生日期</span>
-                    <span class="ans">2001.7.28</span>
-                </li>
-                <li>
-                    <span class="que">手机</span>
-                    <span class="ans">15215760020</span>
-                </li>
-                <li>
-                    <span class="que">e-mail</span>
-                    <span class="ans"><a href="mailto:zh20010728@126.com">zh20010728@126.com</a></span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- 职业技能 -->
-        <div class="info-wrapper" id="p2">
-            <h2 class=>职业技能</h2>
-            <div class="inner-wrapper">
-                <div class="skill">
-                    <strong class="progress-title">Java</strong>
-                    <span class="progress-bar">
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                    </span>
-                </div>
-
-                <div  class="skill">
-                    <strong class="progress-title">Python</strong>
-                    <span class="progress-bar">
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                    </span>
-                </div>
-
-                <div class="skill">
-                    <strong class="progress-title">C++</strong>
-                    <span class="progress-bar">
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                    </span>
-                </div>
-
-                <div class="skill">
-                    <strong class="progress-title">HTML & CSS</strong>
-                    <span class="progress-bar">
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bulletfill"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                        <span class="bullet"></span>
-                    </span>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- 教育经历 -->
-        <div class="info-wrapper" id="p3">
-            <h2 id="p2" class="new-title">教育经历</h2>
-            <div class="edu-wrapper">
-                <div class="pic-wrapper">
-                    <img src="./styles/img/school.jpg"  height="120" alt="华中科技大学校徽" >
-                    <div class="school">
-                        <a href="http://www.hust.edu.cn/"  target="_blank"> <strong>华中科技大学</strong></a>
-                        <span>2019 - 2020 | 管理学创新实验班</span>
-                        <p>
-                        加入华中科技大学运筹优化团队 <strong>【数据魔术师】</strong> 学习运筹优化算法。
-                        <br><br>
-                        在公众号 <strong>【数据魔术师】、【程序猿声】</strong> 内发布多篇优化算法相关推文。
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- 比赛经历 -->
-        <div class="info-wrapper" id="p4">
-            <h2>比赛经历</h2>
-            <div class="timezone">
-                <div class="timeRight">
-                    <h3>Sept <strong>2018</strong></h3>
-                    <div>
-                        <p>全国高中生数学联赛 | 丽水中学</p>
-                        <ul>
-                            <p>刷题做试卷</p>
-                            <br>
-                            <br>
-                            <li>个人参与</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeLeft" style="top: 100px;">
-                    <h3>Feb. <strong>2020</strong></h3>
-                    <div>
-                        <p>美国大学生数学建模大赛 | 华中科技大学</p>
-                        <ul>
-                            <p>算法设计，代码编写，数据分析，文案</p>
-                            <br>
-                            <li>与管理学院17级物流专业学长组队</li>
-                            <li>负责算法开发和对应代码编写</li>
-                            <li>参与部分数据分析及文案工作</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="timeRight2">
-                    <h3>Jan <strong>2020</strong> - now</h3>
-                    <div>
-                        <p>中国大学生服务外包大赛 | 华中科技大学</p>
-                        <ul>
-                            <p>算法设计，代码编写，数据分析</p>
-                            <br>
-                            <li>参与团队 <strong>“关山口的俊女靓男”</strong></li>
-                            <li>负责算法开发和对应代码编写</li>
-                            <li>负责数据分析</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- kawai npy -->
-        <div class="info-wrapper" id="p5">
-            <h2>特别感谢</h2>
-            <div class="gf-wrapper">
-                <img src="./styles/img/美丽的李佳妮同学.jpg" alt="" height="500px">
-            </div>
-            <div class="words-wrapper">
-                <p>
-                    和Genious_Lee在一起大概一个月了。
-                    <br>
-                    满打满算认识也不过半年多，见面的次数屈指可数。
-                    <br>
-                    但是不妨碍我深深的喜欢上这个活泼可爱的女孩。
-                    <br>
-                    <br>
-                    虽然一路走来遇到了许多困难，
-                    <br>
-                    还好有你在，能坚持走下来。
-                    <br>
-                    <br>
-                    希望能一直和你走下去。
-                    <br>
-                    <span class="date">2020.4.16</span> 
-                </p>
-            </div>
-        </div>
-    </div>
-
     <div class="end"></div>
 </body>
 
 <footer class="w">
     <div>
-        <p>Copyright &copy; 2020.Company name All rights reserved.<a href="https://github.com/zll-hust"  target="_blank">zll-hust</a></p>
+        <p>Copyright &copy; 2020.Company name All rights reserved.<a href="https://github.com/zll-hust"
+                target="_blank">zll-hust</a></p>
     </div>
 </footer>
 
