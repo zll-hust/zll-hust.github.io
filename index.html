@@ -12,13 +12,66 @@
     <link rel="stylesheet" href="./styles/css/index v2.css">
     <link rel="icon" href="./favicon.ico">
 
+    <script src="./styles/js/snow.js"></script>
     <script type="text/javascript">
         window.onload = function () {
+
+            var end = document.getElementsByClassName("end")[0];
+            var PageY = getComputedStyle(end, null).height;
+            var PageX = window.screen.width;
+            var aSnow = [];
+            setInterval(createSnow, 500);
+            setInterval(moveSnow, 10);
+
+
+
+            function snow(x, y, xspeed, yspeed, xsin, size) {
+                this.node = document.createElement('div');
+                this.x = x;
+                this.y = y;
+                this.xspeed = xspeed;
+                this.yspeed = yspeed;
+                this.size = size;
+                this.createSnow = function () {
+                    this.node.style.position = 'absolute';
+                    this.node.style.top = this.y + 'px';
+                    this.node.style.left = this.x + 'px';
+                    this.node.innerHTML = '*';
+                    this.node.style.color = "skyblue";
+                    document.body.appendChild(this.node);
+                };
+                this.createSnow();
+                this.snowMove = function () {
+                    //垂直方向移动
+                    this.node.style.top = parseInt(this.node.style.top) + this.yspeed + 'px';
+                    //水平方向
+                    this.node.style.left = parseInt(this.node.style.left) + this.xsin * Math.sin(this
+                        .xspeed) + "px";
+                    this.node.style.fontSize = this.size + 'px';
+                };
+            }
+
+            function createSnow() {
+                aSnow.push(new snow(Math.random() * PageX, -50, 0.02 + Math.random() / 10, 1 + Math.random(),
+                    Math.random() * 30, 20 + Math.random() * 30));
+            }
+
+            function moveSnow() {
+                var j;
+                for (j = 0; j < aSnow.length; j++) {
+                    aSnow[j].snowMove();
+                    if (parseInt(aSnow[j].node.style.top) > PageY || parseInt(aSnow[j].node.style.left) >
+                        PageX) {
+                        aSnow[j].node.parentNode.removeChild(aSnow[j].node);
+                        aSnow.splice(j, 1);
+                    }
+                }
+            }
+
             // 设置顶部导航栏position:fixed后能随网页左右拖动
             window.onscroll = function () {
                 var sl = -Math.max(document.body.scrollLeft, document.documentElement.scrollLeft);
                 document.getElementById('top').style.left = sl + 'px';
-
             };
 
             // 设置鼠标上的红圈

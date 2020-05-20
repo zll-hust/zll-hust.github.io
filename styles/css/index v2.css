@@ -1,3 +1,11 @@
+/* 雪花特效 */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "微软雅黑";
+}
+
 /* 跟随鼠标移动 */
 #box1 {
     width: 50px;
