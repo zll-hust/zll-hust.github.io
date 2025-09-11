@@ -11,54 +11,19 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. Candidate, University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2026/08 (expected).
+  * Major in Transportation Engineering, Minor in Computer Science.
+  * Advisor: Xiaopeng (shaw) Li.
+* Master of Science (Research), University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2025/05.
+  * Major in Transportation Engineering.
+* Bachelor of Management, Huazhong University of Science \& Technology, School of Management. 2019/09-2023/06.
+  * Major in Management Science.
+  * Advisor: Hu Qin and Chun Cheng.
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* Grdauate Research Assistant, University of Wisconsin-Madison, 2023/08-current
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* Grdauate Research Assistant, University of Wisconsin-Madison, 2025/06-current
+  * Instructor for graduate-level course CEE 574 Traffic Control in Fall 2025.
+  * Advisor for undergraduate-level course ECE 399 Independent Study in Summer 2025.
