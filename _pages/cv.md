@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-You can also find my latest full CV [here](https://zll-hust.github.io/files/CV_HZ.pdf) (updated: 09/07/2025).
+You can also find my latest full CV [here](https://zll-hust.github.io/files/CV_HZ.pdf) (updated: 2025/09/0).
 
 ## Education
 

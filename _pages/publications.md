@@ -7,7 +7,7 @@ author_profile: true
 
 You can also find my articles on my [Google Scholar profile](https://scholar.google.com/citations?user=JEih5loAAAAJ&hl=en).
 
-$^*$: I’m the corresponding author. $^{\dag}$: Equal contribution.
+†: I’m the corresponding author. *: Equal contribution.
 
 ## Journal Articles
 
@@ -88,6 +88,6 @@ $^*$: I’m the corresponding author. $^{\dag}$: Equal contribution.
 
 ## Preprint
 
-- Ma, K.$^{\dag}$, **Zhou, H.**$^{\dag}$, Shi, H., Ma, C., & Li, X.  
+- Ma, K.†, **Zhou, H.**†, Shi, H., Ma, C., & Li, X.  
   *Understanding autonomous vehicle behavior: A soft-margin approach in piecewise linear model.*  
   [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933248)
