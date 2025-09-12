@@ -16,7 +16,7 @@ Education
   * Advisor: [Prof. Xiaopeng "Shaw" Li](https://catslab.engr.wisc.edu/staff/xiaopengli/).
 * Master of Science (Research), University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2025/05.
   * Major in Transportation Engineering.
-* Bachelor of Management, Huazhong University of Science \& Technology, School of Management. 2019/09-2023/06.
+* Bachelor of Management, Huazhong University of Science & Technology, School of Management. 2019/09-2023/06.
   * Major in Management Science.
   * Advisor: [Prof. Hu Qin](https://cm.hust.edu.cn/info/1745/24587.htm) and [Prof. Chun Cheng](https://sites.google.com/site/chun123cheng/home).
 
