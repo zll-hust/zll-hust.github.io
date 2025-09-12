@@ -19,6 +19,15 @@ author_profile: true
 
 ## Service
 
-- Reviewer: Serve as an invited reviewer for journals including Transportation Research Part E: Logistics and Transportation Review, IEEE Transactions on Intelligent Transportation Systems, IEEE Intelligent Transportation Systems Magazine, Computers & Industrial Engineering, Transportation Research Board Annual Meeting, etc. Reviewed a total of 40+ papers.
+- Reviewer: I served as an invited reviewer for 40+ papers across the following journals and conferences:  
+  - *Transportation Research Part E: Logistics and Transportation Review*  
+  - *IEEE Transactions on Intelligent Transportation Systems*  
+  - *IEEE Intelligent Transportation Systems Magazine*  
+  - *Computers & Industrial Engineering*  
+  - *Transportation Research Board Annual Meeting*  
+  - Others in the fields of transportation, optimization, and intelligent systems
 
-- Conference: Serve as a student volunteer for conferences such as the 2023 Workshop on Practical Applications of Intelligent Optimization and the 2nd Modified Asphalt Research Center Future Research Focus Workshop.
+
+- Volunteer: I also served as a student volunteer for conferences such as the 2023 Workshop on Practical Applications of Intelligent Optimization and the 2nd Modified Asphalt Research Center Future Research Focus Workshop.
+
+- Technique sharing: I authored blogs on optimization/AI algorithm notes, paper reproductions, and academic career reflections. Published 30+ posts on [CSDN](https://blog.csdn.net/zll_hust?spm=1000.2115.3001.5343) with over 110k page views and 10+ articles to the WeChat public account *Data Magician (数据魔术师)* founded by Prof. Hu Qin. The code and notes I shared on [GitHub](https://github.com/zll-hust) has received 200+ stars.
