@@ -9,10 +9,10 @@ redirect_from:
 
 {% include base_path %}
 
-You can also find my latest full CV [here](https://zll-hust.github.io/files/paper1.pdf).
+You can also find my latest full CV [here](https://zll-hust.github.io/files/CV_HZ.pdf) (updated: 09/07/2025).
 
 ## Education
-======
+
 * Ph.D. Candidate, University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2026/08 (expected).
   * Major in Transportation Engineering, minor in Computer Science.
   * Advisor: [Prof. Xiaopeng "Shaw" Li](https://catslab.engr.wisc.edu/staff/xiaopengli/).
@@ -23,7 +23,7 @@ You can also find my latest full CV [here](https://zll-hust.github.io/files/pape
   * Advisor: [Prof. Hu Qin](https://cm.hust.edu.cn/info/1745/24587.htm) and [Prof. Chun Cheng](https://sites.google.com/site/chun123cheng/home).
 
 ## Work experience
-======
+
 * Grdauate Research Assistant, University of Wisconsin-Madison, 2023/08-current
 
 * Grdauate Research Assistant, University of Wisconsin-Madison, 2025/06-current
@@ -32,7 +32,7 @@ You can also find my latest full CV [here](https://zll-hust.github.io/files/pape
 
   
 ## Awards
-======
+
 - **Outstanding Undergraduates (Merit)**, Huazhong University of Science and Technology — Oct 2022  
 - **The 1988th Alumni Association Scholarship (Best Research Individual)**, Huazhong University of Science and Technology — Mar 2022  
 - **Third Prize**, Huazhong University of Science and Technology Outstanding Undergraduates Annual Meeting — Dec 2021  

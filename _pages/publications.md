@@ -7,6 +7,8 @@ author_profile: true
 
 You can also find my articles on my [Google Scholar profile](https://scholar.google.com/citations?user=JEih5loAAAAJ&hl=en).
 
+$^*$: I’m the corresponding author. $^{\dag}$: Equal contribution.
+
 ## Journal Articles
 
 - Zhang, Y., Ma, K., Xu, Z., **Zhou, H.**, Ma, C., & Li, X.  
@@ -82,3 +84,10 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 - **Zhou, H.**, Ma, K., & Li, X. (2024, June).  
   *A review on trajectory datasets on advanced driver assistance system equipped-vehicles.*  
   In *2024 IEEE Intelligent Vehicles Symposium (IV)* (pp. 1947–1952). IEEE. [Link](https://ieeexplore.ieee.org/document/10588821)
+
+
+## Preprint
+
+- Ma, K.$^{\dag}$, **Zhou, H.**$^{\dag}$, Shi, H., Ma, C., & Li, X.  
+  *Understanding autonomous vehicle behavior: A soft-margin approach in piecewise linear model.*  
+  [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933248)
