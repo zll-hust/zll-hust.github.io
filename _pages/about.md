@@ -16,13 +16,14 @@ My current research focuses on **Production Automated Vehicles (PAVs) evaluation
 ![alt text](../images/method.png)
 
 To promote research across different steps of this pipeline, we initiated an open-source ecosystem: **the [OpenPAV](https://github.com/OpenPAV/OpenPAV) platform**. Our goal is to provide high-quality data and benchmark algorithms for each stage, and eventually establish a billboard showcasing the performance ranking of various PAV brands to offer the public a scientific reference. 
-<!-- Although still in its early stage, the project has already united three research groups, attracted over 200 GitHub stars, and related publications have received more than 30 citations. -->
 
-Another focus of my research is the **routing, trajectory planning, and control of robotics**, especially for automated vehicles. For example, our work has developed a technical roadmap for **Modular Automated Vehicles** that leverages their advantages of en-route reformation while ensuring safety during docking and splitting operations, and tested the method in a reduced-scale test bed.
+Another focus of my research is the **routing, trajectory planning, and montion control of robotics**, especially for automated vehicles. For example, our work has developed a technical roadmap for **[modular automated vehicles](https://www.next-future-mobility.com/)** that leverages their advantages of en-route reformation while ensuring safety during docking and splitting operations, and tested the method in a reduced-scale test bed.
 
 ![alt text](../images/modular.png)
 
-I'm also interested in broader applications of **AI and optimization in intelligent transportation systems**, such as **urban air mobility**. Our research integrates drones with transportation and logistics applications, combining theoretical analysis with physical tests to study the potential impacts of future drone systems on cities.![alt text](../images/drone.jpg)
+I'm also interested in broader applications of **AI and optimization in intelligent transportation systems**, such as **urban air mobility**. Our research integrates drones with transportation and logistics applications, combining theoretical analysis with physical tests to study the potential impacts of future drone systems on cities.
+
+![alt text](../images/drone.png)
 
 ## News
 

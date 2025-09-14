@@ -17,8 +17,8 @@ Website building...
 
 ## Urban air mobility
 
-![alt text](../images/drone.jpg)
+![alt text](../images/drone.png)
 
-## Intelligent traffic management
+<!-- ## Intelligent traffic management -->
 
 ## Smart logistics
