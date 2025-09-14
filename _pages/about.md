@@ -13,13 +13,11 @@ My name is Hang Zhou, and I am a third-year Ph.D. student at the University of W
 
 ## Research interests
 
-My research mainly applies methods from artificial intelligence (AI) and operations research (OR) to address the challenges posed by emerging technologies in transportation, such as automated vehicles and drones.
-
-My major research focuses on **Production Automated Vehicles (PAVs) evaluation**. My studies trying to solve two key challenges in the PAV evaluation: (1) PAV manufacturers do not disclose the internal control algorithms, and (2) the safety testing of PAVs requires large-scale field testing or simulation, which is prohibitively time- and cost-intensive. To address these challenges, my studies propose a data-driven pipeline for evaluating PAV performance from PAV-related data. To promote research across different steps of this pipeline, we initiated an open-source ecosystem: **the [OpenPAV](https://github.com/OpenPAV/OpenPAV) platform**. Our goal is to establish a billboard showcasing the performance ranking of various PAV brands to offer the public a scientific reference. 
+My research mainly applies methods from artificial intelligence and optimization to address the challenges posed by **emerging technologies in transportation**. My current research focuses on **Production Automated Vehicles (PAVs) evaluation**. Since PAV manufacturers always do not disclose the internal control algorithms, we propose a data-driven pipeline for evaluating PAV performance from PAV-related data. To promote research across different steps of this pipeline, we initiated an open-source ecosystem: **the [OpenPAV](https://github.com/OpenPAV/OpenPAV) platform**. Our goal is to establish a billboard showcasing the performance ranking of various PAV brands to offer the public a scientific reference.
 
 ![alt text](../images/method.png)
 
-I'm also interested in the **routing, trajectory planning, and montion control of robotics** and **urban air mobility**. I'm always trying to integrate theoretical analysis with physical tests.
+Besides, I'm also interested in the **routing, trajectory planning, and montion control of robotics** and **urban air mobility**. I'm always trying to integrate theoretical analysis with physical tests.
 
 ![alt text](../images/system.png)
 

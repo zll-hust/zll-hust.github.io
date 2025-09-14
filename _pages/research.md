@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-Benefiting from an educational background across multiple departments, I have developed broad research interests. In particular, I concentrate on emerging technologies in transportation, such as automated vehicles and drones. My work mainly applies methods from artificial intelligence (AI) and operations research (OR) to address the challenges posed by these technologies.
+Benefiting from an educational background across multiple departments, I have developed broad research interests. In particular, I concentrate on **emerging technologies in transportation**, such as automated vehicles and drones. My work mainly applies methods from artificial intelligence (AI) and operations research (OR) to address the challenges posed by these technologies.
 
 ## Automated vehicle evaluation
 
