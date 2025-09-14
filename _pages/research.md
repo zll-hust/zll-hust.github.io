@@ -5,7 +5,7 @@ permalink: /research/
 author_profile: true
 ---
 
-Benefiting from an educational background across multiple departments, I have developed broad research interests. In particular, I concentrate on emerging technologies in transportation, such as automated vehicles and drones. My work mainly applies methods from artificial intelligence and operations research to address the challenges posed by these technologies.
+Benefiting from an educational background across multiple departments, I have developed broad research interests. In particular, I concentrate on emerging technologies in transportation, such as automated vehicles and drones. My work mainly applies methods from artificial intelligence (AI) and operations research (OR) to address the challenges posed by these technologies.
 
 ## Automated vehicle evaluation
 
@@ -79,7 +79,7 @@ Related publications:
 
 ## Smart logistics
 
-Before my Ph.D., my former research with \href{https://cm.hust.edu.cn/info/1745/24587.htm}{Prof. Hu Qin} and \href{https://sites.google.com/site/chun123cheng/home}{Prof. Chun Cheng} focused on optimization problems in logistics using operations research (OR) algorithms. We developed tailored solution methods for many emerging transportation modes, including various heuristic and exact algorithms. This solid foundation in OR has equipped me with strong analytical and modeling skills for addressing new research problems during my Ph.D. studies.
+Before my Ph.D., my former research with [Prof. Hu Qin](https://cm.hust.edu.cn/info/1745/24587.htm) and [Prof. Chun Cheng](https://sites.google.com/site/chun123cheng/home) focused on optimization problems in logistics using OR algorithms. We developed tailored solution methods for many emerging transportation modes, including various heuristic and exact algorithms. This solid foundation in OR has equipped me with strong analytical and modeling skills for addressing new research problems during my Ph.D. studies.
 
 ![alt text](../images/logistics.png)
 
