@@ -7,13 +7,13 @@ author_profile: true
 
 You can also find my articles on my [Google Scholar profile](https://scholar.google.com/citations?user=JEih5loAAAAJ&hl=en).
 
-†: I’m the corresponding author. *: Equal contribution.
+†: Equal contribution. *: I’m the corresponding author.
 
 ## Journal Articles
 
 - Zhang, Y., Ma, K., Xu, Z., **Zhou, H.**, Ma, C., & Li, X.  
   *A modeling methodology for car-following behaviors of automated vehicles: Trade-Off between stability and mobility.*  
-  *Transportation Research Part B: Methodological*. Accepted. [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4866270)
+  *Transportation Research Part B: Methodological*, 200, 103316. [Link](https://doi.org/10.1016/j.trb.2025.103316)
 
 - Cai, X., **Zhou, H.**, Ma, C., Li, X., & Ran, B. (2025).  
   *Evaluating impacts of public transit and automobiles during connected automated vehicle adoption.*  
@@ -35,7 +35,7 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
   *Security strategy against generalized inter-vehicle cyberattacks in car-following scenarios for connected and autonomous vehicles.*  
   *Transportation Research Part C: Emerging Technologies*, 178, 105216. [Link](https://doi.org/10.1016/j.trc.2025.105216) | [Code](https://github.com/CATS-Lab/Cybersecurity)
 
-- Wang, J., Zhang, R., **Zhou, H.** \*, Huang, W., Feng, D., & Li, X. (2025).  
+- Wang, J., Zhang, R. \*, **Zhou, H.** \*, Huang, W., Feng, D., & Li, X. (2025).  
   *Optimization of asphalt mix design considering mixture performance, environmental impact, and life cycle cost.*  
   *Journal of Cleaner Production*, 145618. [Link](https://doi.org/10.1016/j.jclepro.2025.145618)
 
@@ -88,10 +88,18 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 ## Preprint
 
-- Ma, K.†, **Zhou, H.**†, Shi, H., Ma, C., & Li, X.  
+- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X.  
+  *Towards full-scenario safety evaluation of automated vehicles: A volume-based method.*  
+  [Link](https://arxiv.org/abs/2506.09182)
+
+- Ma, K., **Zhou, H.** \*, Shi, H., Ma, C., & Li, X.  
   *Understanding autonomous vehicle behavior: A soft-margin approach in piecewise linear model.*  
   [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933248)
 
+- Ma, C., Li, H., Long, K., **Zhou, H.**, Liang, Z., Li, P., Yu, H., & Li, X.  
+  *Real-time identification of cooperative perception necessity in road traffic scenarios.*  
+  [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4973353)
+
 - Chen, W., Huang, H., Ma, K., Li, H., Liang, S., **Zhou, H.**, & Li, X.  
-  *Uniform scaling law in stochastic human and autonomous driving.*  
-  [Link](https://www.researchgate.net/publication/395135515_Uniform_Scaling_Law_in_Stochastic_Human_and_Autonomous_Driving)
+  *Unveiling uniform shifted power law in law in stochastic human and autonomous driving behavior.*  
+  [Link](https://arxiv.org/abs/2511.00659)
