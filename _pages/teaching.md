@@ -19,7 +19,7 @@ author_profile: true
 
 ## Service
 
-- Reviewer: I served as an invited reviewer for 40+ papers across the following journals and conferences:  
+- Reviewer: I served as an invited reviewer for 50+ papers across the following journals and conferences:  
   - *Transportation Research Part E: Logistics and Transportation Review*  
   - *IEEE Transactions on Intelligent Transportation Systems*  
   - *IEEE Intelligent Transportation Systems Magazine*  

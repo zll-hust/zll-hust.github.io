@@ -11,7 +11,15 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 ## Journal Articles
 
-- Zhang, Y., Ma, K., Xu, Z., **Zhou, H.**, Ma, C., & Li, X.  
+- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X. (2025). 
+  Towards full-scenario safety evaluation of automated vehicles: A volume-based method. 
+  *Transportation Research Part C: Emerging Technologies*. Accepted. [Link](https://doi.org/10.48550/arXiv.2506.09182) [Code](https://github.com/CATS-Lab/Volume_AV_Evaluation)
+
+- Long, K., Liang, Z., **Zhou, H.**, & Li, X. (2025). 
+  Vehicle trajectory dataset based on unmanned aerial vehicles videos. 
+  *IEEE Intelligent Transportation Systems Magazine*. Accept. [Code](https://github.com/CATS-Lab/Filed-data-Corridor-Vehicle-Trajectory)
+
+- Zhang, Y., Ma, K., Xu, Z., **Zhou, H.**, Ma, C., & Li, X. (2025). 
   *A modeling methodology for car-following behaviors of automated vehicles: Trade-Off between stability and mobility.*  
   *Transportation Research Part B: Methodological*, 200, 103316. [Link](https://doi.org/10.1016/j.trb.2025.103316)
 
