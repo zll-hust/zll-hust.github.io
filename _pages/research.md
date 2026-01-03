@@ -16,25 +16,15 @@ My current research focuses on **Production Automated Vehicles (PAVs) evaluation
 To promote research across different steps of this pipeline, we initiated an open-source ecosystem: **the [OpenPAV](https://github.com/OpenPAV/OpenPAV) platform**. Our goal is to provide high-quality data and benchmark algorithms for each stage, and eventually establish a billboard showcasing the performance ranking of various PAV brands to offer the public a scientific reference.
 
 Related publications:
-- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X. (2026). 
-  *Towards full-scenario safety evaluation of automated vehicles: A volume-based method.* 
-  *Transportation Research Part C: Emerging Technologies*, 183, 105485. [Link](https://doi.org/10.1016/j.trc.2025.105485) | [Code](https://github.com/CATS-Lab/Volume_AV_Evaluation)
+- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X. (2026). Towards full-scenario safety evaluation of automated vehicles: A volume-based method. *Transportation Research Part C: Emerging Technologies*, 183, 105485. [Link](https://doi.org/10.1016/j.trc.2025.105485) | [Code](https://github.com/CATS-Lab/Volume_AV_Evaluation)
   
-- **Zhou, H.**, Ma, C., Ma, K., & Li, X. (2025).  
-  *Quantile-based scenario generation for automated vehicle safety evaluation.*  
-  *Accident Analysis & Prevention*, 218, 108043. [Link](https://www.sciencedirect.com/science/article/pii/S0001457525001290)
+- **Zhou, H.**, Ma, C., Ma, K., & Li, X. (2025). Quantile-based scenario generation for automated vehicle safety evaluation. *Accident Analysis & Prevention*, 218, 108043. [Link](https://www.sciencedirect.com/science/article/pii/S0001457525001290)
   
-- **Zhou, H.**, Ma, K., Liang, S., Li, X., & Qu, X. (2024).  
-  *A unified longitudinal trajectory dataset for automated vehicles.*  
-  *Scientific Data*, 11, 1123. [Link](https://doi.org/10.1038/s41597-024-03795-y) | [Code](https://github.com/CATS-Lab/Filed-Experiment-Data-ULTra-AV)
+- **Zhou, H.**, Ma, K., Liang, S., Li, X., & Qu, X. (2024). A unified longitudinal trajectory dataset for automated vehicles. *Scientific Data*, 11, 1123. [Link](https://doi.org/10.1038/s41597-024-03795-y) | [Code](https://github.com/CATS-Lab/Filed-Experiment-Data-ULTra-AV)
 
-- Ma, K., **Zhou, H.**, Liang, Z., & Li, X. (2025).  
-  *Automated vehicle microscopic energy consumption study (AV-Micro): Data collection and model development.*  
-  *Energy*, 320, 135096. [Link](https://doi.org/10.1016/j.energy.2025.135096) | [Code](https://github.com/MarkMaaaaa/AV_Energy_Analysis)
+- Ma, K., **Zhou, H.**, Liang, Z., & Li, X. (2025). Automated vehicle microscopic energy consumption study (AV-Micro): Data collection and model development. *Energy*, 320, 135096. [Link](https://doi.org/10.1016/j.energy.2025.135096) | [Code](https://github.com/MarkMaaaaa/AV_Energy_Analysis)
 
-- Cai, X., **Zhou, H.**, Ma, C., Li, X., & Ran, B. (2025).  
-  *Evaluating impacts of public transit and automobiles during connected automated vehicle adoption.*  
-  *Journal of Advanced Transportation*, 2025(1), 4103948. [Link](https://doi.org/10.1155/atr/4103948) | [Code](https://github.com/zll-hust/AV-VISSIM)
+- Cai, X., **Zhou, H.**, Ma, C., Li, X., & Ran, B. (2025). Evaluating impacts of public transit and automobiles during connected automated vehicle adoption. *Journal of Advanced Transportation*, 2025(1), 4103948. [Link](https://doi.org/10.1155/atr/4103948) | [Code](https://github.com/zll-hust/AV-VISSIM)
 
 ## Robotics vehicle control and trajectory planning
 
@@ -43,25 +33,13 @@ Another focus of my research is the **routing, trajectory planning, and montion 
 ![alt text](../images/modular.png)
 
 Related publications:
-- **Zhou, H.**, Ma, C., Cai, X., Ma, K., Li, X., & Ran, B. (2025).  
-  *Security strategy against generalized inter-vehicle cyberattacks in car-following scenarios for connected and autonomous vehicles.*  
-  *Transportation Research Part C: Emerging Technologies*, 178, 105216. [Link](https://doi.org/10.1016/j.trc.2025.105216) | [Code](https://github.com/CATS-Lab/Cybersecurity)
+- **Zhou, H.**, Ma, C., Cai, X., Ma, K., Li, X., & Ran, B. (2025). Security strategy against generalized inter-vehicle cyberattacks in car-following scenarios for connected and autonomous vehicles. *Transportation Research Part C: Emerging Technologies*, 178, 105216. [Link](https://doi.org/10.1016/j.trc.2025.105216) | [Code](https://github.com/CATS-Lab/Cybersecurity)
 
-- **Zhou, H.**, Zhang, P., Liang, Z., Li, H., & Li, X. (2025).  
-  *Coverage trajectory planning problem on 3D terrains with safety constraint for automated lawn mower: Exact and heuristic approaches.*  
-  *Robotics and Autonomous Systems*, 105109. [Link](https://doi.org/10.1016/j.robot.2025.105109) | [Code](https://github.com/CATS-Lab/Mower-CTPP-3D)
+- **Zhou, H.**, Zhang, P., Liang, Z., Li, H., & Li, X. (2025). Coverage trajectory planning problem on 3D terrains with safety constraint for automated lawn mower: Exact and heuristic approaches. *Robotics and Autonomous Systems*, 105109. [Link](https://doi.org/10.1016/j.robot.2025.105109) | [Code](https://github.com/CATS-Lab/Mower-CTPP-3D)
 
-- Ma, C., **Zhou, H.**, Zhang, P., Ma, K., Shi, H., & Li, X. (2025).  
-  *Safety assurance adaptive control in modular autonomous vehicles.*  
-  *Communications in Transportation Research*, 5, 100204. [Link](https://doi.org/10.1016/j.commtr.2025.100204)
-  
-- Liang, Z., Ma, C., **Zhou, H.**, Long, K., & Li, X. (2025).  
-  *An analytical eco-driving trajectory planning method with field test validation at intersections.*  
-  *Transportation Research Part D: Transport and Environment*, 146, 104870. [Link](https://doi.org/10.1016/j.trd.2025.104870) | [Video](https://youtu.be/IgchcTqqOIA)
+- Ma, C., **Zhou, H.**, Zhang, P., Ma, K., Shi, H., & Li, X. (2025). Safety assurance adaptive control in modular autonomous vehicles. *Communications in Transportation Research*, 5, 100204. [Link](https://doi.org/10.1016/j.commtr.2025.100204)
 
-- Zhang, P., Huang, H., **Zhou, H.**, Shi, H., Long, K., & Li, X. (2025).  
-  *Online adaptive platoon control for connected and automated vehicles via physical enhanced residual learning.*  
-  *Transportation Research Part C: Emerging Technologies*, 178, 105242. [Link](https://doi.org/10.1016/j.trc.2025.105242) | [Code](https://github.com/CATS-Lab/AV-Control-PERL_Platooning)
+- Zhang, P., Huang, H., **Zhou, H.**, Shi, H., Long, K., & Li, X. (2025). Online adaptive platoon control for connected and automated vehicles via physical enhanced residual learning. *Transportation Research Part C: Emerging Technologies*, 178, 105242. [Link](https://doi.org/10.1016/j.trc.2025.105242) | [Code](https://github.com/CATS-Lab/AV-Control-PERL_Platooning)
 
 
 ## Urban air mobility
@@ -71,13 +49,9 @@ I'm also interested in broader applications of **AI and optimization in intellig
 ![alt text](../images/drone.png)
 
 Related publications:
-- **Zhou, H.**, Qin, H., Cheng, C., & Rousseau, L. M. (2023).  
-  *An exact algorithm for the two-echelon vehicle routing problem with drones.*  
-  *Transportation Research Part B: Methodological*, 168, 124-150. [Link](https://doi.org/10.1016/j.trb.2023.01.002)
+- **Zhou, H.**, Zhai, Y., Shen, S., Ouyang, Y., Shi, X., & Li, X. Developing a fundamental diagram for urban air mobility based on physical experiments. [Link](https://arxiv.org/abs/2512.21425) | [Code](https://github.com/CATS-Lab/UAM-FD)
 
-- **Zhou, H.**, Zhai, Y., Shen, S., Ouyang, Y., Shi, X., & Li, X. 
-  *Developing a fundamental diagram for urban air mobility based on physical experiments.* 
-  [Link](https://arxiv.org/abs/2512.21425) | [Code](https://github.com/CATS-Lab/UAM-FD)
+- **Zhou, H.**, Qin, H., Cheng, C., & Rousseau, L. M. (2023). An exact algorithm for the two-echelon vehicle routing problem with drones. *Transportation Research Part B: Methodological*, 168, 124–150. [Link](https://doi.org/10.1016/j.trb.2023.01.002)
 
 ## Smart logistics
 
@@ -86,14 +60,8 @@ Before my Ph.D., my former research with [Prof. Hu Qin](https://cm.hust.edu.cn/i
 ![alt text](../images/logistics.png)
 
 Related publications:
-- **Zhou, H.**, Li, Y., Ma, C., Long, K., & Li, X. (2025).  
-  *Modular vehicle routing problem: Applications in logistics.*  
-  *Transportation Research Part E: Logistics and Transportation Review*, 197, 104022. [Link](https://doi.org/10.1016/j.tre.2025.104022) | [Code](https://github.com/CATS-Lab/MVRP)
+- **Zhou, H.**, Li, Y., Ma, C., Long, K., & Li, X. (2025). Modular vehicle routing problem: Applications in logistics. *Transportation Research Part E: Logistics and Transportation Review*, 197, 104022. [Link](https://doi.org/10.1016/j.tre.2025.104022) | [Code](https://github.com/CATS-Lab/MVRP)
 
-- **Zhou, H.**, Qin, H., Cheng, C., & Rousseau, L. M. (2023).  
-  *An exact algorithm for the two-echelon vehicle routing problem with drones.*  
-  *Transportation Research Part B: Methodological*, 168, 124-150. [Link](https://doi.org/10.1016/j.trb.2023.01.002)
+- **Zhou, H.**, Qin, H., Cheng, C., & Rousseau, L. M. (2023). An exact algorithm for the two-echelon vehicle routing problem with drones. *Transportation Research Part B: Methodological*, 168, 124–150. [Link](https://doi.org/10.1016/j.trb.2023.01.002)
 
-- **Zhou, H.**, Qin, H., Zhang, Z., & Li, J. (2022).  
-  *Two-echelon vehicle routing problem with time windows and simultaneous pickup and delivery.*  
-  *Soft Computing*, 26(7), 3345-3360. [Link](https://doi.org/10.1007/s00500-021-06712-2) | [Code](https://github.com/zll-hust/2E-VRPTWSPD)
+- **Zhou, H.**, Qin, H., Zhang, Z., & Li, J. (2022). Two-echelon vehicle routing problem with time windows and simultaneous pickup and delivery. *Soft Computing*, 26(7), 3345–3360. [Link](https://doi.org/10.1007/s00500-021-06712-2) | [Code](https://github.com/zll-hust/2E-VRPTWSPD)
