@@ -9,11 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-You can also find my latest full CV [here](https://zll-hust.github.io/files/CV_HZ.pdf) (updated: 2025/11/26).
+You can also find my latest full CV [here](https://zll-hust.github.io/files/CV_HZ.pdf) (updated: 2026/01/03).
 
 ## Education
 
-* Ph.D. Candidate, University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2026/12 (expected).
+* Doctor of Philosophy, University of Wisconsin-Madison, Department of Civil and Environmental Engineering. 2023/08-2026/12 (expected).
   * Major in Transportation Engineering, minor in Computer Science.
   * Advisor: [Prof. Xiaopeng "Shaw" Li](https://catslab.engr.wisc.edu/staff/xiaopengli/).
   * Dissertation: A data-driven pipeline for the safety evaluation of production automated vehicles.

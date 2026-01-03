@@ -11,13 +11,13 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 ## Journal Articles
 
-- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X. (2025). 
-  Towards full-scenario safety evaluation of automated vehicles: A volume-based method. 
-  *Transportation Research Part C: Emerging Technologies*. Accepted. [Link](https://doi.org/10.48550/arXiv.2506.09182) [Code](https://github.com/CATS-Lab/Volume_AV_Evaluation)
+- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X. (2026). 
+  *Towards full-scenario safety evaluation of automated vehicles: A volume-based method.* 
+  *Transportation Research Part C: Emerging Technologies*, 183, 105485. [Link](https://doi.org/10.1016/j.trc.2025.105485) | [Code](https://github.com/CATS-Lab/Volume_AV_Evaluation)
 
 - Long, K., Liang, Z., **Zhou, H.**, & Li, X. (2025). 
-  Vehicle trajectory dataset based on unmanned aerial vehicles videos. 
-  *IEEE Intelligent Transportation Systems Magazine*. Accept. [Code](https://github.com/CATS-Lab/Filed-data-Corridor-Vehicle-Trajectory)
+  *Vehicle trajectory dataset based on unmanned aerial vehicles videos.*
+  *IEEE Intelligent Transportation Systems Magazine*. [Link](https://ieeexplore.ieee.org/document/11315144) | [Code](https://github.com/CATS-Lab/Filed-data-Corridor-Vehicle-Trajectory)
 
 - Zhang, Y., Ma, K., Xu, Z., **Zhou, H.**, Ma, C., & Li, X. (2025). 
   *A modeling methodology for car-following behaviors of automated vehicles: Trade-Off between stability and mobility.*  
@@ -96,18 +96,34 @@ You can also find my articles on my [Google Scholar profile](https://scholar.goo
 
 ## Preprint
 
-- **Zhou, H.**, Ma, C., Shen, S., Liang, Z., & Li, X.  
-  *Towards full-scenario safety evaluation of automated vehicles: A volume-based method.*  
-  [Link](https://arxiv.org/abs/2506.09182)
+- **Zhou, H.**, Zhai, Y., Shen, S., Ouyang, Y., Shi, X., & Li, X. 
+  *Developing a fundamental diagram for urban air mobility based on physical experiments.* 
+  [Link](https://arxiv.org/abs/2512.21425) | [Code](https://github.com/CATS-Lab/UAM-FD)
 
 - Ma, K., **Zhou, H.** \*, Shi, H., Ma, C., & Li, X.  
   *Understanding autonomous vehicle behavior: A soft-margin approach in piecewise linear model.*  
   [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4933248)
 
+- Liu, J., Ma, C., **Zhou, H.**, Tang, W., Liang, S., Ding, H., Ran, B., & Li, X.
+  *Spontaneous Risk-Aware Selective Cooperative Perception.*
+  [Link](https://arxiv.org/abs/2511.17461)
+
 - Ma, C., Li, H., Long, K., **Zhou, H.**, Liang, Z., Li, P., Yu, H., & Li, X.  
   *Real-time identification of cooperative perception necessity in road traffic scenarios.*  
   [Link](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4973353)
 
+- Li, Z., Zhang, P., Liang, S., **Zhou, H.**, Ma, C., Li, Q., Yao, H., & Li, X.
+  *Benchmarking Tesla's Traffic Light and Stop Sign Control: Field Dataset and Behavior Insights.*
+  [Code](https://github.com/CATS-Lab/Data-Tesla-Traffic-Light-and-Stop-Sign-Control)
+
+- Liang, S., Ma, C., Li, P., Shi, H., Liu, J., **Zhou, H.**, Cao, B., & Li, X.
+  *Real-Time Lane-Level Crash Detection on Freeways Using Sparse Telematics Data.*
+  [Link](https://arxiv.org/abs/2511.18148)
+
 - Chen, W., Huang, H., Ma, K., Li, H., Liang, S., **Zhou, H.**, & Li, X.  
   *Unveiling uniform shifted power law in law in stochastic human and autonomous driving behavior.*  
   [Link](https://arxiv.org/abs/2511.00659)
+
+- Li, H., Cao, B., Liang, Z., Li, W., Oh, J., Chen, Y., Liang, S., **Zhou, H.**, Ma, C., Liu, J., Li Z., Zhang, P., Long, K., Liu, M., Jiang, J., Yu C., Liu, S., Yu, H., & Li, X.
+  *CATS-V2V: A real-world vehicle-to-vehicle cooperative perception dataset with complex adverse traffic scenarios.*
+  [Link](https://arxiv.org/abs/2511.11168) | [Web](https://cats-v2v-dataset.github.io)

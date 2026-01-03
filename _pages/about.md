@@ -23,6 +23,6 @@ Besides, I'm also interested in the **routing, trajectory planning, and montion 
 
 ## News
 
-- Nov 2026: I have passed my preliminary exam with the dissertation titled "A Data-Driven Pipeline for the Safety Evaluation of Production Automated Vehicles." Grateful to my committee and lab members for their support!
+- Nov 2025: I have passed my preliminary exam with the dissertation titled "A Data-Driven Pipeline for the Safety Evaluation of Production Automated Vehicles." Grateful to my committee and lab members for their support!
 
-- Oct 2026: I will attend the Transportation Research Board (TRB) Annual Meeting in Washington, D.C., on January 10-14, 2026, to present our study "Developing a Fundamental Diagram for Urban Air Mobility Traffic Flow Based on Physical Experiments" and other six studies I participated in. Feel free to check out our works and connect with me there!
+- Oct 2025: I will attend the Transportation Research Board (TRB) Annual Meeting in Washington, D.C., on January 10-14, 2026, to present our study "Developing a Fundamental Diagram for Urban Air Mobility Traffic Flow Based on Physical Experiments" and other six studies I participated in. Feel free to check out our works and connect with me there!
